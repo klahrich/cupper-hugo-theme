@@ -1,10 +1,57 @@
 /* Fonts */
+/*
 @font-face {
     font-family: 'Miriam Libre';
     src: url('{{ "css/fonts/miriamlibre-bold.woff2" | absURL }}') format('woff2'), url('{{ "css/fonts/miriamlibre-bold.woff" | absURL }}') format('woff');
     font-weight: bold;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('{{ "css/fonts/nunito-v25-latin-regular.woff2" | absURL }}') format('woff2'), url('{{ "css/fonts/nunito-v25-latin-regular.woff" | absURL }}') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Playfair';
+    src: url('{{ "css/fonts/playfair-display-v30-latin-regular.woff2" | absURL }}') format('woff2'), url('{{ "css/fonts/playfair-display-v30-latin-regular.woff" | absURL }}') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*/
+
+@font-face {
+    font-family: 'Lora';
+    src: url('{{ "css/fonts/lora-v26-latin/lora-v26-latin-regular.woff2" | absURL }}') format('woff2'), url('{{ "css/fonts/lora-v26-latin/lora-v26-latin-regular.woff" | absURL }}') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Biorhyme';
+    src: url('{{ "css/fonts/biorhyme-v12-latin/biorhyme-v12-latin-regular.woff2" | absURL }}') format('woff2'), url('{{ "css/fonts/biorhyme-v12-latin/biorhyme-v12-latin-regular.woff" | absURL }}') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Biorhyme';
+    src: url('{{ "css/fonts/biorhyme-v12-latin/biorhyme-v12-latin-300.woff2" | absURL }}') format('woff2'), url('{{ "css/fonts/biorhyme-v12-latin/biorhyme-v12-latin-300.woff" | absURL }}') format('woff');
+    font-weight: lighter;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('{{ "css/fonts/manrope-v13-latin/manrope-v13-latin-regular.woff2" | absURL }}') format('woff2'), url('{{ "css/fonts/manrope-v13-latin/manrope-v13-latin-regular.woff" | absURL }}') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
 *,
 *::before,
 *::after {
@@ -17,8 +64,10 @@
 }
 html,
 body {
-    font-size: calc(1em + 0.33vw);
-    font-family: Arial, Helvetica Neue, sans-serif;
+    /*font-size: calc(1em + 0.25vw);*/
+    font-size: calc(1em + 0.05vw);
+    font-family: 'Lora', sans-serif;
+    /*font-weight: lighter;*/
     line-height: 1.5;
     color: #111;
     background-color: #fefefe;
@@ -59,7 +108,7 @@ abbr {
 }
 img {
     max-width: 100%;
-    max-height: 50vh;
+    max-height: 100%;
 }
 .img-link {
     border-bottom: none;
@@ -208,6 +257,7 @@ dd li + li {
 blockquote {
   border-left: 0.5rem solid;
   padding-left: 0.75rem;
+  background-color: rgb(242, 242, 243);
 }
 blockquote .author {
   font-size: 0.85rem;
